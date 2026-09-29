@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #d6d6d6;
+}
+
+/* Форма */
+form {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.666);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Поля */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+/* Підсвітка */
+input:hover {
+    border-color: #4923f5;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+    transform: scale(1.01);
+}
+
+/* Валідація */
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+/* HTML5 */
+input:required:user-valid {
+    background-color: #eaffea;
+}
+
+input:required:user-invalid {
+    background-color: #ffecec;
+}
+
+/* Помилки */
+.error {
+    color: red;
+    font-size: 12px;
+    min-height: 14px;
+}
+
+/* Сила пароля */
+.strength {
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Кнопки */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Hover ефект */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.573);
+}
+
+/* Натискання */
+button:active {
+    transform: scale(0.98);
+}
+
+.submit-btn {
+    background: #2f9032;
+    color: white;
+}
+
+.reset-btn {
+    background: #d3180a;
+    color: white;
+}
